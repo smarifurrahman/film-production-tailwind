@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Production</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: '#FECC02',
+                        black: '#131313',
+                        gray: '#131313',
+                        white: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        bebas: ['Bebas Neue', 'cursive'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    <h1 class="text-7xl font-bold">Production</h1>
+    <header>
+        <!-- navbar -->
+        <nav class="bg-white h-20 fixed top-0 left-0 right-0">
+            <div class="flex justify-between items-center h-20 w-full max-w-7xl mx-auto font-bebas px-5">
+                <h1 class="text-2xl mr-3 cursor-pointer">Film Production</h1>
+                <ul class="flex text-lg gap-3 sm:gap-8">
+                    <li class="cursor-pointer">About Us</li>
+                    <li class="cursor-pointer">Our Movies</li>
+                    <li class="cursor-pointer">Services</li>
+                </ul>
+            </div>
+        </nav>
+        <!-- banner -->
+        <section class="bg-green-500 h-screen pt-20 bg-[url('./images/banner.jpg')] bg-cover">
+            <div class="h-full w-full max-w-7xl mx-auto px-5 flex items-center">
+                <div class="font-bebas text-white">
+                    <h2 class="text-lg">Movie production studio</h2>
+                    <h1 class="text-7xl">Films Made to</h1>
+                    <h1 class="text-yellow text-7xl">Perfection</h1>
+                    <p class="font-montserrat max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <button class="border-2 py-3 px-4 text-lg mt-7 hover:bg-yellow hover:border-yellow hover:text-black transition-all">Discover More</button>
+                </div>
+            </div>
+        </section>
+    </header>
 </body>
+
 </html>
